@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.2.1)
+  - Realm (5.4.1):
+    - Realm/Headers (= 5.4.1)
+  - Realm/Headers (5.4.1)
+  - RealmSwift (5.4.1):
+    - Realm (= 5.4.1)
+  - YouTubePlayer (0.7.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - RealmSwift (~> 5.4.1)
+  - YouTubePlayer
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Realm
+    - RealmSwift
+    - YouTubePlayer
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Realm: 7e887608ef1de2d0c3a33dd9b1449e08fc9d9807
+  RealmSwift: ef998d9b678fd74e047c56ef4d99d9b77e87c1eb
+  YouTubePlayer: 2b5f2830d8f9b2cde942083211291e382c9e6bd5
+
+PODFILE CHECKSUM: 4b42ec57a4300f0188c0b82559ebdd6e42136892
+
+COCOAPODS: 1.9.3

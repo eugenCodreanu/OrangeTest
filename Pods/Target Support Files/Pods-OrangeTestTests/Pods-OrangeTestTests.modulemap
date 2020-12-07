@@ -1,0 +1,6 @@
+framework module Pods_OrangeTestTests {
+  umbrella header "Pods-OrangeTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

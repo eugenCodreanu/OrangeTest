@@ -1,0 +1,956 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00105754EBE565799DC94746 /* Pods_OrangeTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526106643F2A9F9E8F33D886 /* Pods_OrangeTestTests.framework */; };
+		22E264281CF1F241508FA155 /* Pods_OrangeTest_OrangeTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88F91F817E80EF3E09F6B58 /* Pods_OrangeTest_OrangeTestUITests.framework */; };
+		5E5FD962BDCA9826C002BA6A /* Pods_OrangeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789860B485E548F7773B69F2 /* Pods_OrangeTest.framework */; };
+		E6CA0851257BCE20005B62A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA0850257BCE20005B62A6 /* AppDelegate.swift */; };
+		E6CA0853257BCE20005B62A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA0852257BCE20005B62A6 /* SceneDelegate.swift */; };
+		E6CA0858257BCE20005B62A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6CA0856257BCE20005B62A6 /* Main.storyboard */; };
+		E6CA085A257BCE23005B62A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6CA0859257BCE23005B62A6 /* Assets.xcassets */; };
+		E6CA085D257BCE23005B62A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6CA085B257BCE23005B62A6 /* LaunchScreen.storyboard */; };
+		E6CA0868257BCE23005B62A6 /* OrangeTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA0867257BCE23005B62A6 /* OrangeTestTests.swift */; };
+		E6CA0873257BCE24005B62A6 /* OrangeTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA0872257BCE24005B62A6 /* OrangeTestUITests.swift */; };
+		E6CA0885257BCF44005B62A6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA0884257BCF44005B62A6 /* Router.swift */; };
+		E6CA088A257BD1F0005B62A6 /* ModuleAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA0889257BD1F0005B62A6 /* ModuleAssembler.swift */; };
+		E6CA088F257BD203005B62A6 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA088E257BD203005B62A6 /* ApiService.swift */; };
+		E6CA08A6257BD53D005B62A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA08A5257BD53D005B62A6 /* Constants.swift */; };
+		E6CA08AE257BD5D6005B62A6 /* circle_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E6CA08AC257BD5D6005B62A6 /* circle_bold.otf */; };
+		E6CA08AF257BD5D6005B62A6 /* circle_regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E6CA08AD257BD5D6005B62A6 /* circle_regular.otf */; };
+		E6CA08BA257BD6AD005B62A6 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA08B9257BD6AD005B62A6 /* MainController.swift */; };
+		E6CA08C0257BDC1A005B62A6 /* Preloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA08BF257BDC1A005B62A6 /* Preloader.swift */; };
+		E6CA08C5257BDDBB005B62A6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA08C4257BDDBB005B62A6 /* Extensions.swift */; };
+		E6CA08CA257BEA70005B62A6 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA08C9257BEA70005B62A6 /* Enums.swift */; };
+		E6CA08CF257BEC02005B62A6 /* LaunchListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA08CE257BEC02005B62A6 /* LaunchListModule.swift */; };
+		E6CA08D4257BEC11005B62A6 /* LaunchListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA08D3257BEC11005B62A6 /* LaunchListPresenter.swift */; };
+		E6CA08E0257BEE21005B62A6 /* LaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA08DF257BEE21005B62A6 /* LaunchModel.swift */; };
+		E6CA08E5257C00C1005B62A6 /* LaunchDetailsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA08E4257C00C1005B62A6 /* LaunchDetailsModule.swift */; };
+		E6CA08EA257C00D5005B62A6 /* LaunchDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA08E9257C00D5005B62A6 /* LaunchDetailsPresenter.swift */; };
+		E6CA08F8257CD34D005B62A6 /* LaunchCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA08F7257CD34D005B62A6 /* LaunchCellView.swift */; };
+		E6CA08FD257CD43F005B62A6 /* CustomLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA08FC257CD43F005B62A6 /* CustomLable.swift */; };
+		E6CA091B257CE627005B62A6 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA091A257CE627005B62A6 /* ImageView.swift */; };
+		E6CA0920257CE983005B62A6 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA091F257CE983005B62A6 /* BackButton.swift */; };
+		E6CA0929257CEFD8005B62A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6CA092B257CEFD8005B62A6 /* Localizable.strings */; };
+		E6CA0930257CF033005B62A6 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = E6CA092F257CF033005B62A6 /* arrow.png */; };
+		E6CA0951257D8324005B62A6 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA0950257D8324005B62A6 /* DataProvider.swift */; };
+		E6CA0960257D83F5005B62A6 /* RealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA095F257D83F5005B62A6 /* RealmDB.swift */; };
+		E6CA0965257D843F005B62A6 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA0964257D843F005B62A6 /* FavoriteModel.swift */; };
+		E6CA096B257D89A0005B62A6 /* FavoritesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA096A257D89A0005B62A6 /* FavoritesModule.swift */; };
+		E6CA0970257D89B1005B62A6 /* FavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA096F257D89B1005B62A6 /* FavoritesPresenter.swift */; };
+		E6CA0989257DB7BE005B62A6 /* ReachabilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA0988257DB7BD005B62A6 /* ReachabilityView.swift */; };
+		E6CA098E257DBF17005B62A6 /* RocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CA098D257DBF17005B62A6 /* RocketModel.swift */; };
+		E6CA099A257DCCB7005B62A6 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = E6CA0999257DCCB7005B62A6 /* refresh.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6CA0864257BCE23005B62A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6CA0845257BCE20005B62A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6CA084C257BCE20005B62A6;
+			remoteInfo = OrangeTest;
+		};
+		E6CA086F257BCE24005B62A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6CA0845257BCE20005B62A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6CA084C257BCE20005B62A6;
+			remoteInfo = OrangeTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		045097DAB576468A13F0CCA6 /* Pods-OrangeTest-OrangeTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeTest-OrangeTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-OrangeTest-OrangeTestUITests/Pods-OrangeTest-OrangeTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		526106643F2A9F9E8F33D886 /* Pods_OrangeTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789860B485E548F7773B69F2 /* Pods_OrangeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		800CABACFCDA34508AFE3848 /* Pods-OrangeTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeTestTests.debug.xcconfig"; path = "Target Support Files/Pods-OrangeTestTests/Pods-OrangeTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		833D75213AAA802D89C70FFD /* Pods-OrangeTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeTestTests.release.xcconfig"; path = "Target Support Files/Pods-OrangeTestTests/Pods-OrangeTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		AB6CD7BD3FD2915DB7B74D9D /* Pods-OrangeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeTest.debug.xcconfig"; path = "Target Support Files/Pods-OrangeTest/Pods-OrangeTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B88F91F817E80EF3E09F6B58 /* Pods_OrangeTest_OrangeTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeTest_OrangeTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1738C7AFC3ABE5903DD7EED /* Pods-OrangeTest-OrangeTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeTest-OrangeTestUITests.release.xcconfig"; path = "Target Support Files/Pods-OrangeTest-OrangeTestUITests/Pods-OrangeTest-OrangeTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E6CA084D257BCE20005B62A6 /* OrangeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6CA0850257BCE20005B62A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6CA0852257BCE20005B62A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E6CA0857257BCE20005B62A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6CA0859257BCE23005B62A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6CA085C257BCE23005B62A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6CA085E257BCE23005B62A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6CA0863257BCE23005B62A6 /* OrangeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrangeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6CA0867257BCE23005B62A6 /* OrangeTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeTestTests.swift; sourceTree = "<group>"; };
+		E6CA0869257BCE23005B62A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6CA086E257BCE24005B62A6 /* OrangeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrangeTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6CA0872257BCE24005B62A6 /* OrangeTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeTestUITests.swift; sourceTree = "<group>"; };
+		E6CA0874257BCE24005B62A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6CA0884257BCF44005B62A6 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E6CA0889257BD1F0005B62A6 /* ModuleAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleAssembler.swift; sourceTree = "<group>"; };
+		E6CA088E257BD203005B62A6 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		E6CA08A5257BD53D005B62A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E6CA08AC257BD5D6005B62A6 /* circle_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = circle_bold.otf; sourceTree = "<group>"; };
+		E6CA08AD257BD5D6005B62A6 /* circle_regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = circle_regular.otf; sourceTree = "<group>"; };
+		E6CA08B9257BD6AD005B62A6 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		E6CA08BF257BDC1A005B62A6 /* Preloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preloader.swift; sourceTree = "<group>"; };
+		E6CA08C4257BDDBB005B62A6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E6CA08C9257BEA70005B62A6 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		E6CA08CE257BEC02005B62A6 /* LaunchListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListModule.swift; sourceTree = "<group>"; };
+		E6CA08D3257BEC11005B62A6 /* LaunchListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListPresenter.swift; sourceTree = "<group>"; };
+		E6CA08DF257BEE21005B62A6 /* LaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModel.swift; sourceTree = "<group>"; };
+		E6CA08E4257C00C1005B62A6 /* LaunchDetailsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsModule.swift; sourceTree = "<group>"; };
+		E6CA08E9257C00D5005B62A6 /* LaunchDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsPresenter.swift; sourceTree = "<group>"; };
+		E6CA08F7257CD34D005B62A6 /* LaunchCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCellView.swift; sourceTree = "<group>"; };
+		E6CA08FC257CD43F005B62A6 /* CustomLable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLable.swift; sourceTree = "<group>"; };
+		E6CA091A257CE627005B62A6 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		E6CA091F257CE983005B62A6 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		E6CA092A257CEFD8005B62A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E6CA092F257CF033005B62A6 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		E6CA0950257D8324005B62A6 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		E6CA095F257D83F5005B62A6 /* RealmDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDB.swift; sourceTree = "<group>"; };
+		E6CA0964257D843F005B62A6 /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
+		E6CA096A257D89A0005B62A6 /* FavoritesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModule.swift; sourceTree = "<group>"; };
+		E6CA096F257D89B1005B62A6 /* FavoritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenter.swift; sourceTree = "<group>"; };
+		E6CA0988257DB7BD005B62A6 /* ReachabilityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityView.swift; sourceTree = "<group>"; };
+		E6CA098D257DBF17005B62A6 /* RocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketModel.swift; sourceTree = "<group>"; };
+		E6CA0999257DCCB7005B62A6 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		F808EB66174C6AEDA831DE5F /* Pods-OrangeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeTest.release.xcconfig"; path = "Target Support Files/Pods-OrangeTest/Pods-OrangeTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6CA084A257BCE20005B62A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5FD962BDCA9826C002BA6A /* Pods_OrangeTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CA0860257BCE23005B62A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00105754EBE565799DC94746 /* Pods_OrangeTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CA086B257BCE24005B62A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E264281CF1F241508FA155 /* Pods_OrangeTest_OrangeTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E688236063F7FCC12A862F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				789860B485E548F7773B69F2 /* Pods_OrangeTest.framework */,
+				B88F91F817E80EF3E09F6B58 /* Pods_OrangeTest_OrangeTestUITests.framework */,
+				526106643F2A9F9E8F33D886 /* Pods_OrangeTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3DF0FFD05584130DF8CEAED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB6CD7BD3FD2915DB7B74D9D /* Pods-OrangeTest.debug.xcconfig */,
+				F808EB66174C6AEDA831DE5F /* Pods-OrangeTest.release.xcconfig */,
+				045097DAB576468A13F0CCA6 /* Pods-OrangeTest-OrangeTestUITests.debug.xcconfig */,
+				C1738C7AFC3ABE5903DD7EED /* Pods-OrangeTest-OrangeTestUITests.release.xcconfig */,
+				800CABACFCDA34508AFE3848 /* Pods-OrangeTestTests.debug.xcconfig */,
+				833D75213AAA802D89C70FFD /* Pods-OrangeTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E6CA0844257BCE20005B62A6 = {
+			isa = PBXGroup;
+			children = (
+				E6CA084F257BCE20005B62A6 /* OrangeTest */,
+				E6CA0866257BCE23005B62A6 /* OrangeTestTests */,
+				E6CA0871257BCE24005B62A6 /* OrangeTestUITests */,
+				E6CA084E257BCE20005B62A6 /* Products */,
+				E3DF0FFD05584130DF8CEAED /* Pods */,
+				9E688236063F7FCC12A862F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E6CA084E257BCE20005B62A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA084D257BCE20005B62A6 /* OrangeTest.app */,
+				E6CA0863257BCE23005B62A6 /* OrangeTestTests.xctest */,
+				E6CA086E257BCE24005B62A6 /* OrangeTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6CA084F257BCE20005B62A6 /* OrangeTest */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA08DE257BEE09005B62A6 /* Models */,
+				E6CA08BE257BDC07005B62A6 /* Views */,
+				E6CA08AA257BD5B3005B62A6 /* Resources */,
+				E6CA08A4257BD524005B62A6 /* Utils */,
+				E6CA0893257BD477005B62A6 /* Controllers */,
+				E6CA0883257BCF25005B62A6 /* Services */,
+				E6CA0850257BCE20005B62A6 /* AppDelegate.swift */,
+				E6CA0852257BCE20005B62A6 /* SceneDelegate.swift */,
+				E6CA0856257BCE20005B62A6 /* Main.storyboard */,
+				E6CA0859257BCE23005B62A6 /* Assets.xcassets */,
+				E6CA085B257BCE23005B62A6 /* LaunchScreen.storyboard */,
+				E6CA085E257BCE23005B62A6 /* Info.plist */,
+				E6CA092B257CEFD8005B62A6 /* Localizable.strings */,
+			);
+			path = OrangeTest;
+			sourceTree = "<group>";
+		};
+		E6CA0866257BCE23005B62A6 /* OrangeTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA0867257BCE23005B62A6 /* OrangeTestTests.swift */,
+				E6CA0869257BCE23005B62A6 /* Info.plist */,
+			);
+			path = OrangeTestTests;
+			sourceTree = "<group>";
+		};
+		E6CA0871257BCE24005B62A6 /* OrangeTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA0872257BCE24005B62A6 /* OrangeTestUITests.swift */,
+				E6CA0874257BCE24005B62A6 /* Info.plist */,
+			);
+			path = OrangeTestUITests;
+			sourceTree = "<group>";
+		};
+		E6CA0883257BCF25005B62A6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA0884257BCF44005B62A6 /* Router.swift */,
+				E6CA0889257BD1F0005B62A6 /* ModuleAssembler.swift */,
+				E6CA088E257BD203005B62A6 /* ApiService.swift */,
+				E6CA095F257D83F5005B62A6 /* RealmDB.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E6CA0893257BD477005B62A6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA0969257D8982005B62A6 /* Favorites */,
+				E6CA089D257BD4AA005B62A6 /* LaunchDetails */,
+				E6CA0899257BD492005B62A6 /* LaunchList */,
+				E6CA08B9257BD6AD005B62A6 /* MainController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E6CA0899257BD492005B62A6 /* LaunchList */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA08CE257BEC02005B62A6 /* LaunchListModule.swift */,
+				E6CA08D3257BEC11005B62A6 /* LaunchListPresenter.swift */,
+			);
+			path = LaunchList;
+			sourceTree = "<group>";
+		};
+		E6CA089D257BD4AA005B62A6 /* LaunchDetails */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA08E4257C00C1005B62A6 /* LaunchDetailsModule.swift */,
+				E6CA08E9257C00D5005B62A6 /* LaunchDetailsPresenter.swift */,
+			);
+			path = LaunchDetails;
+			sourceTree = "<group>";
+		};
+		E6CA08A4257BD524005B62A6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA08A5257BD53D005B62A6 /* Constants.swift */,
+				E6CA08C4257BDDBB005B62A6 /* Extensions.swift */,
+				E6CA08C9257BEA70005B62A6 /* Enums.swift */,
+				E6CA0950257D8324005B62A6 /* DataProvider.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E6CA08AA257BD5B3005B62A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA0995257DC696005B62A6 /* Images */,
+				E6CA08AB257BD5C6005B62A6 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E6CA08AB257BD5C6005B62A6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA08AC257BD5D6005B62A6 /* circle_bold.otf */,
+				E6CA08AD257BD5D6005B62A6 /* circle_regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E6CA08BE257BDC07005B62A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA091A257CE627005B62A6 /* ImageView.swift */,
+				E6CA08BF257BDC1A005B62A6 /* Preloader.swift */,
+				E6CA08F7257CD34D005B62A6 /* LaunchCellView.swift */,
+				E6CA08FC257CD43F005B62A6 /* CustomLable.swift */,
+				E6CA091F257CE983005B62A6 /* BackButton.swift */,
+				E6CA0988257DB7BD005B62A6 /* ReachabilityView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6CA08DE257BEE09005B62A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA08DF257BEE21005B62A6 /* LaunchModel.swift */,
+				E6CA0964257D843F005B62A6 /* FavoriteModel.swift */,
+				E6CA098D257DBF17005B62A6 /* RocketModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E6CA0969257D8982005B62A6 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA096A257D89A0005B62A6 /* FavoritesModule.swift */,
+				E6CA096F257D89B1005B62A6 /* FavoritesPresenter.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		E6CA0995257DC696005B62A6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E6CA0999257DCCB7005B62A6 /* refresh.png */,
+				E6CA092F257CF033005B62A6 /* arrow.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6CA084C257BCE20005B62A6 /* OrangeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6CA0877257BCE24005B62A6 /* Build configuration list for PBXNativeTarget "OrangeTest" */;
+			buildPhases = (
+				6BD93B644C6B89867001298F /* [CP] Check Pods Manifest.lock */,
+				E6CA0849257BCE20005B62A6 /* Sources */,
+				E6CA084A257BCE20005B62A6 /* Frameworks */,
+				E6CA084B257BCE20005B62A6 /* Resources */,
+				61AF91E24C6D20D84223563E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrangeTest;
+			productName = OrangeTest;
+			productReference = E6CA084D257BCE20005B62A6 /* OrangeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6CA0862257BCE23005B62A6 /* OrangeTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6CA087A257BCE24005B62A6 /* Build configuration list for PBXNativeTarget "OrangeTestTests" */;
+			buildPhases = (
+				D2403C4B39CB22A0E6752DF4 /* [CP] Check Pods Manifest.lock */,
+				E6CA085F257BCE23005B62A6 /* Sources */,
+				E6CA0860257BCE23005B62A6 /* Frameworks */,
+				E6CA0861257BCE23005B62A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6CA0865257BCE23005B62A6 /* PBXTargetDependency */,
+			);
+			name = OrangeTestTests;
+			productName = OrangeTestTests;
+			productReference = E6CA0863257BCE23005B62A6 /* OrangeTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6CA086D257BCE24005B62A6 /* OrangeTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6CA087D257BCE24005B62A6 /* Build configuration list for PBXNativeTarget "OrangeTestUITests" */;
+			buildPhases = (
+				07CD742C8099D519D9601E33 /* [CP] Check Pods Manifest.lock */,
+				E6CA086A257BCE24005B62A6 /* Sources */,
+				E6CA086B257BCE24005B62A6 /* Frameworks */,
+				E6CA086C257BCE24005B62A6 /* Resources */,
+				A76D53F4144AF4EE122E9D1E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6CA0870257BCE24005B62A6 /* PBXTargetDependency */,
+			);
+			name = OrangeTestUITests;
+			productName = OrangeTestUITests;
+			productReference = E6CA086E257BCE24005B62A6 /* OrangeTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6CA0845257BCE20005B62A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					E6CA084C257BCE20005B62A6 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					E6CA0862257BCE23005B62A6 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = E6CA084C257BCE20005B62A6;
+					};
+					E6CA086D257BCE24005B62A6 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = E6CA084C257BCE20005B62A6;
+					};
+				};
+			};
+			buildConfigurationList = E6CA0848257BCE20005B62A6 /* Build configuration list for PBXProject "OrangeTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6CA0844257BCE20005B62A6;
+			productRefGroup = E6CA084E257BCE20005B62A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6CA084C257BCE20005B62A6 /* OrangeTest */,
+				E6CA0862257BCE23005B62A6 /* OrangeTestTests */,
+				E6CA086D257BCE24005B62A6 /* OrangeTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6CA084B257BCE20005B62A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6CA08AE257BD5D6005B62A6 /* circle_bold.otf in Resources */,
+				E6CA085D257BCE23005B62A6 /* LaunchScreen.storyboard in Resources */,
+				E6CA085A257BCE23005B62A6 /* Assets.xcassets in Resources */,
+				E6CA0929257CEFD8005B62A6 /* Localizable.strings in Resources */,
+				E6CA0858257BCE20005B62A6 /* Main.storyboard in Resources */,
+				E6CA099A257DCCB7005B62A6 /* refresh.png in Resources */,
+				E6CA08AF257BD5D6005B62A6 /* circle_regular.otf in Resources */,
+				E6CA0930257CF033005B62A6 /* arrow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CA0861257BCE23005B62A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CA086C257BCE24005B62A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07CD742C8099D519D9601E33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrangeTest-OrangeTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61AF91E24C6D20D84223563E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrangeTest/Pods-OrangeTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrangeTest/Pods-OrangeTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrangeTest/Pods-OrangeTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BD93B644C6B89867001298F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrangeTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A76D53F4144AF4EE122E9D1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrangeTest-OrangeTestUITests/Pods-OrangeTest-OrangeTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrangeTest-OrangeTestUITests/Pods-OrangeTest-OrangeTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrangeTest-OrangeTestUITests/Pods-OrangeTest-OrangeTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2403C4B39CB22A0E6752DF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrangeTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6CA0849257BCE20005B62A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6CA08C0257BDC1A005B62A6 /* Preloader.swift in Sources */,
+				E6CA096B257D89A0005B62A6 /* FavoritesModule.swift in Sources */,
+				E6CA091B257CE627005B62A6 /* ImageView.swift in Sources */,
+				E6CA08FD257CD43F005B62A6 /* CustomLable.swift in Sources */,
+				E6CA0951257D8324005B62A6 /* DataProvider.swift in Sources */,
+				E6CA0965257D843F005B62A6 /* FavoriteModel.swift in Sources */,
+				E6CA08EA257C00D5005B62A6 /* LaunchDetailsPresenter.swift in Sources */,
+				E6CA0960257D83F5005B62A6 /* RealmDB.swift in Sources */,
+				E6CA0920257CE983005B62A6 /* BackButton.swift in Sources */,
+				E6CA098E257DBF17005B62A6 /* RocketModel.swift in Sources */,
+				E6CA08E0257BEE21005B62A6 /* LaunchModel.swift in Sources */,
+				E6CA08C5257BDDBB005B62A6 /* Extensions.swift in Sources */,
+				E6CA08CA257BEA70005B62A6 /* Enums.swift in Sources */,
+				E6CA08F8257CD34D005B62A6 /* LaunchCellView.swift in Sources */,
+				E6CA0885257BCF44005B62A6 /* Router.swift in Sources */,
+				E6CA0970257D89B1005B62A6 /* FavoritesPresenter.swift in Sources */,
+				E6CA08BA257BD6AD005B62A6 /* MainController.swift in Sources */,
+				E6CA08CF257BEC02005B62A6 /* LaunchListModule.swift in Sources */,
+				E6CA088F257BD203005B62A6 /* ApiService.swift in Sources */,
+				E6CA0851257BCE20005B62A6 /* AppDelegate.swift in Sources */,
+				E6CA08A6257BD53D005B62A6 /* Constants.swift in Sources */,
+				E6CA0853257BCE20005B62A6 /* SceneDelegate.swift in Sources */,
+				E6CA088A257BD1F0005B62A6 /* ModuleAssembler.swift in Sources */,
+				E6CA0989257DB7BE005B62A6 /* ReachabilityView.swift in Sources */,
+				E6CA08D4257BEC11005B62A6 /* LaunchListPresenter.swift in Sources */,
+				E6CA08E5257C00C1005B62A6 /* LaunchDetailsModule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CA085F257BCE23005B62A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6CA0868257BCE23005B62A6 /* OrangeTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CA086A257BCE24005B62A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6CA0873257BCE24005B62A6 /* OrangeTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6CA0865257BCE23005B62A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6CA084C257BCE20005B62A6 /* OrangeTest */;
+			targetProxy = E6CA0864257BCE23005B62A6 /* PBXContainerItemProxy */;
+		};
+		E6CA0870257BCE24005B62A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6CA084C257BCE20005B62A6 /* OrangeTest */;
+			targetProxy = E6CA086F257BCE24005B62A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6CA0856257BCE20005B62A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6CA0857257BCE20005B62A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E6CA085B257BCE23005B62A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6CA085C257BCE23005B62A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E6CA092B257CEFD8005B62A6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6CA092A257CEFD8005B62A6 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6CA0875257BCE24005B62A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6CA0876257BCE24005B62A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6CA0878257BCE24005B62A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB6CD7BD3FD2915DB7B74D9D /* Pods-OrangeTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = OrangeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spacex.orange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6CA0879257BCE24005B62A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F808EB66174C6AEDA831DE5F /* Pods-OrangeTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = OrangeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spacex.orange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E6CA087B257BCE24005B62A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 800CABACFCDA34508AFE3848 /* Pods-OrangeTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrangeTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orange.test.OrangeTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrangeTest.app/OrangeTest";
+			};
+			name = Debug;
+		};
+		E6CA087C257BCE24005B62A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 833D75213AAA802D89C70FFD /* Pods-OrangeTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrangeTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orange.test.OrangeTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrangeTest.app/OrangeTest";
+			};
+			name = Release;
+		};
+		E6CA087E257BCE24005B62A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 045097DAB576468A13F0CCA6 /* Pods-OrangeTest-OrangeTestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrangeTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orange.test.OrangeTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OrangeTest;
+			};
+			name = Debug;
+		};
+		E6CA087F257BCE24005B62A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1738C7AFC3ABE5903DD7EED /* Pods-OrangeTest-OrangeTestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OrangeTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.orange.test.OrangeTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OrangeTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6CA0848257BCE20005B62A6 /* Build configuration list for PBXProject "OrangeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6CA0875257BCE24005B62A6 /* Debug */,
+				E6CA0876257BCE24005B62A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6CA0877257BCE24005B62A6 /* Build configuration list for PBXNativeTarget "OrangeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6CA0878257BCE24005B62A6 /* Debug */,
+				E6CA0879257BCE24005B62A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6CA087A257BCE24005B62A6 /* Build configuration list for PBXNativeTarget "OrangeTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6CA087B257BCE24005B62A6 /* Debug */,
+				E6CA087C257BCE24005B62A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6CA087D257BCE24005B62A6 /* Build configuration list for PBXNativeTarget "OrangeTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6CA087E257BCE24005B62A6 /* Debug */,
+				E6CA087F257BCE24005B62A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6CA0845257BCE20005B62A6 /* Project object */;
+}
